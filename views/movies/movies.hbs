@@ -1,0 +1,15 @@
+{{!-- <h2>Movies</h2>
+{{#each movies}}
+  <p>{{this.title}}</p>
+  <!-- Displaying the title of each movie -->
+{{else}}
+  <p>No movies found.</p>
+{{/each}} --}}
+
+<h2>Movies</h2>
+{{#each movies}}
+  <p><a href="/movies/{{this._id}}">{{this.title}}</a></p>
+  <!-- Link to the movie's details page -->
+{{else}}
+  <p>No movies found.</p>
+{{/each}}
